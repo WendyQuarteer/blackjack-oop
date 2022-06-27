@@ -14,12 +14,13 @@ class Blackjack
      * @param $dealer
      * @param $deck
      */
-    public function __construct(Player $player, Player $dealer, Deck $deck)
+    public function __construct()
     {
-        $this->player = $player;
-        $this->dealer = $dealer;
-        $this->deck = $deck;
+        $this->deck = new Deck();//getDeck (returns the deck object)
         $this->deck->shuffle();//Shuffle the cards with shuffle method on deck
+        $this->player = new Player($this->deck);//getPlayer (returns the player object)//Instantiate the Player class twice, insert it into the player property and a dealer property.
+        $this->dealer = new Player($this->deck);//getDealer (returns the dealer object)//Instantiate the Player class twice, insert it into the player property and a dealer property.
+
     }
 
     /**

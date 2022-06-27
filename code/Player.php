@@ -12,7 +12,7 @@ class Player
     /**
      * @param bool $lost
      */
-    public function __construct(array $cards, Deck $deck)//Make it expect the Deck object as a parameter
+    public function __construct(Deck $deck)//Make it expect the Deck object as a parameter
     {
         $this->cards[] = $deck->drawCard();//Draw 2 cards for the player. You have to use an existing method for this from the Deck class
         $this->cards[] = $deck->drawCard();//Draw 2 cards for the player. You have to use an existing method for this from the Deck class
@@ -27,7 +27,7 @@ class Player
         }
     }
 
-    public function surrender()
+    public function surrender()//surrender should make you surrender the game. (Dealer wins.) This sets the property lost in the player instance to true.
     {
         echo $this->lost = true;
     }
@@ -41,7 +41,7 @@ class Player
         return $score;
     }
 
-    public function hasLost()
+    public function hasLost()//Will return the bool of the lost property.
     {
         return $this->lost;
     }

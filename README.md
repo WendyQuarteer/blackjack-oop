@@ -21,11 +21,11 @@
     - [x] getDealer (returns the dealer object)
     - [x] getDeck (returns the deck object)
   - [x] In the constructor do the following:
-    - [!] Instantiate the Player class twice, insert it into the player property and a dealer property.
+    - [x] Instantiate the Player class twice, insert it into the player property and a dealer property.
     - [x] Create a new deck object (code has already been written for you!)
     - [x] Shuffle the cards with shuffle method on deck.
   - [x] In the constructor of the Player class; Make it expect the Deck object as a parameter.
-    - [!] Pass this Deck from the Blackjack constructor.
+    - [x] Pass this Deck from the Blackjack constructor.
     - [x] Now draw 2 cards for the player. You have to use an existing method for this from the Deck class.
   - [x] Go back to the Player class and add the following logic in your empty methods: getScore loops over all the cards and return the total value of that player.
     - [x] hasLost will return the bool of the lost property.
@@ -33,9 +33,10 @@
       - [] (optional) For bonus points make the number 21 a class constant: this is a magical value we want to avoid.
     - [x] surrender should make you surrender the game. (Dealer wins.) This sets the property lost in the player instance to true.
     - [x] stand does not have a method in the player class but will instead call hit on the dealer instance. (you have to do nothing here)
-## - [] Creating the index.php file.  Require all the files with the classes you already created. Ideally you want a seperate file for each class.
-- [] Start the PHP session
+## - [x] Creating the index.php file.  
+- [x] Require all the files with the classes you already created. Ideally you want a seperate file for each class.
+- [x] Start the PHP session
 - [] If the session does not have a Blackjack variable yet:
-  - [] Create a new Blackjack object.
+  - [x] Create a new Blackjack object.
   - [] Put the Blackjack object in the session
 - [] Use buttons or links to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)
