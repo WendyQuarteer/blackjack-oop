@@ -1,15 +1,15 @@
 # blackjack-oop
 ##Creating the base classes
 
-### - [] Create a class called Player in the file Player.php.
-  - [] Add 2 private properties:
-    - [] cards (array)
-    - [] lost (bool, default = false)
+### - [x] Create a class called Player in the file Player.php.
+  - [x] Add 2 private properties:
+    - [x] cards (array)
+    - [x] lost (bool, default = false)
   - [] Add a couple of empty public methods to this class:
-    - []   hit
-    - []   surrender
-    - []   getScore
-    - []   hasLost
+    - [x] hit
+    - [x] surrender
+    - [x] getScore
+    - [x] hasLost
 
 ### - [] Create a class called Blackjack in the file Blackjack.php
   - [] Add 3 private properties:
