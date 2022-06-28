@@ -7,6 +7,7 @@ class Player
     //Add 2 private properties
     private array $cards;
     private bool $lost;
+    const MAX = '21';
 
 
     /**

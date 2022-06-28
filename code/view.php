@@ -8,6 +8,10 @@
     <title>Blackjack-OOP</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <h1>Blackjack</h1>
+</header>
+<!--Use buttons or links to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)-->
 <form action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <button type="submit"  value="start" name="start" autofocus><span style="cursor: pointer">PLAY</span></button>
     <button type="submit"  value="hit" name="hit" autofocus><span style="cursor: pointer">HIT ME</span></button>

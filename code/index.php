@@ -9,13 +9,25 @@ require 'Deck.php';
 require 'Suit.php';
 require 'Card.php';
 require 'view.php';
+require 'Dealer.php';
 
-$blackjack = new Blackjack();
+public function button()
+{
+    if (isset($_POST['start'])) {
+        //Create a new Blackjack object.
+        $_SESSION['blackjack'] = new Blackjack();
+    }
 
-if(isset($_POST['start'])) {
+    if (isset($_POST['hit'])) {
 
+    }
+
+    if (isset($_POST['stand'])) {
+        //$_SESSION['blackjack']->getDealer()->hit();
+    }
+    if (isset($_POST['surrender'])) {
+        //$_SESSION['blackjack']->getPlayer()->surrender();
+    }
 }
-
-
 
 
