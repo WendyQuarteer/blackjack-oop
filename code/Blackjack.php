@@ -20,21 +20,20 @@ class Blackjack
         $this->deck->shuffle();//Shuffle the cards with shuffle method on deck
         $this->player = new Player($this->deck);//getPlayer (returns the player object)//Instantiate the Player class twice, insert it into the player property and a dealer property.
         $this->dealer = new Dealer($this->deck);//getDealer (returns the dealer object)//Instantiate the Player class twice, insert it into the player property and a dealer property.//change to dealer
-
     }
 
     /**
      * @return Player
      */
-    public function getPlayer(): Player
+    public function getPlayer():object
     {
         return $this->player;
     }
 
     /**
-     * @return Player
+     * @return Dealer
      */
-    public function getDealer(): Player
+    public function getDealer():object
     {
         return $this->dealer;
     }
@@ -46,6 +45,12 @@ class Blackjack
     {
         return $this->deck;
     }
+
+
+  /*  public function getCard():array
+    {
+        return $this->card;
+    }*/
 
 
 

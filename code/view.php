@@ -12,8 +12,9 @@
     <h1>Blackjack</h1>
 </header>
 <!--Use buttons or links to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)-->
-<form action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-    <button type="submit"  value="start" name="start" autofocus><span style="cursor: pointer">PLAY</span></button>
+<form  method="post">
+    <button type="submit"  value="play" name="start" autofocus><span style="cursor: pointer">PLAY</span></button>
+
     <button type="submit"  value="hit" name="hit" autofocus><span style="cursor: pointer">HIT ME</span></button>
     <button type="submit"  value="stand" name="stand" autofocus><span style="cursor: pointer">I STAND</span></button>
     <button type="submit"  value="surrender" name="surrender" autofocus><span style="cursor: pointer">I SURRENDER</span></button>

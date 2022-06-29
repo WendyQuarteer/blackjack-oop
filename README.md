@@ -10,6 +10,7 @@
     - [x] surrender
     - [x] getScore
     - [x] hasLost
+    - [x] getCards
 
 ### - [x] Create a class called Blackjack in the file Blackjack.php
   - [] Add 3 private properties:
@@ -36,7 +37,7 @@
 ## - [x] Creating the index.php file.  
 - [x] Require all the files with the classes you already created. Ideally you want a separate file for each class.
 - [x] Start the PHP session
-- [] If the session does not have a Blackjack variable yet:
+- [x] If the session does not have a Blackjack variable yet:
   - [x] Create a new Blackjack object.
   - [x] Put the Blackjack object in the session
 - [x] Use buttons or links to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)
@@ -52,3 +53,14 @@ The tricky part is that we also need the lost check we already had in the hit fu
 We could just copy the code but duplicated code is never the solution, instead you can use the following code 
 to call the old hit function:
 parent::hit();
+
+## Final push
+All classes are ready, now you just need to write some minimal glue in the index.php. The final result should be the following:
+
+- [x] When you hit button call hit on player, then check the lost status of the player. 
+You will need to pass a Deck variable to this function, you can use the Blackjack::getDeck() method for this.
+- [x] When you hit the stand button call hit on dealer, then check the lost status of the dealer. 
+If he is not lost, compare scores to set the winner (If equal the dealer wins).
+- [] Surrender: the dealer auto wins.
+- [] Always display on the page the scores of both players. If you have a winner, display it.
+- [] End of the game: destroy the current blackjack variable so the game restarts.
